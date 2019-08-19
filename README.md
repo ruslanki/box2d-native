@@ -1,3 +1,21 @@
+# Notes from Alex Yau:
+* Current version from zuker/box2d-native supports an older version of babel and swig, which contains removed methods in V8 - https://electronjs.org/blog/nodejs-native-addons-and-electron-5
+* npm run patch_swig applies the patches outlined here - https://github.com/swig/swig/issues/1520
+Run the following to install
+```
+npm install node-gyp -g
+npm install
+```
+Then copy the `build/Release/Box2D.node` binding file to host project.
+On host project, run
+```
+npm install --save bindings
+```
+and require the file by
+```
+var bindings = require('bindings')('Box2D.node');
+```
+
 [![Build Status](https://travis-ci.org/zuker/box2d-native.svg?branch=master)](https://travis-ci.org/zuker/box2d-native)
 
 # box2d-native
