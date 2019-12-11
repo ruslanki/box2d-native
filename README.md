@@ -1,3 +1,11 @@
+# Notes. For build in ubuntu 18.04:
+```
+apt-get install automake
+apt-get install libpcre3-dev
+apt-get install byacc
+apt-get install cmake
+```
+
 # Notes from Alex Yau:
 * Current version from zuker/box2d-native supports an older version of babel and swig, which contains removed methods in V8 - https://electronjs.org/blog/nodejs-native-addons-and-electron-5
 * npm run patch_swig applies the patches outlined here - https://github.com/swig/swig/issues/1520
