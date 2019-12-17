@@ -5,6 +5,10 @@ apt-get install libpcre3-dev
 apt-get install byacc
 apt-get install cmake
 ```
+# in docker container pls run
+```
+npm install --unsafe-perm
+```
 
 # Notes from Alex Yau:
 * Current version from zuker/box2d-native supports an older version of babel and swig, which contains removed methods in V8 - https://electronjs.org/blog/nodejs-native-addons-and-electron-5
